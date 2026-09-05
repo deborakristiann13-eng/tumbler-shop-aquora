@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquora - Premium Stainless Steel Tumbler Collection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Space+Grotesk:wght@600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 80% 20%, #1e3a8a 0%, #0f172a 45%, #020617 100%);
+        }
+
+        .font-engrave-1 { font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 0.15em; }
+        .font-engrave-2 { font-family: 'Playfair Display', serif; font-style: italic; }
+        .font-engrave-3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: 0.2em; }
+
+        .color-dot {
+            transition: all 0.2s ease-in-out;
+        }
+        .color-dot:hover, .color-dot.active {
+            transform: scale(1.25);
+            outline: 2px solid #38bdf8;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+    <!-- Header & Navigasi -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#beranda" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-400 via-cyan-400 to-blue-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                        A
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black tracking-wider bg-gradient-to-r from-teal-300 via-cyan-300 to-sky-400 bg-clip-text text-transparent">AQUORA</span>
+                        <span class="block text-[10px] tracking-widest text-teal-400 uppercase font-semibold">100% Stainless Steel</span>
+                    </div>
+                </a>
+
+                <!-- Navigasi Desktop -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#beranda" class="hover:text-cyan-400 transition-colors">Beranda</a>
+                    <a href="#katalog" class="hover:text-cyan-400 transition-colors">Pilihan Warna & Model</a>
+                    <a href="#keunggulan" class="hover:text-cyan-400 transition-colors">Bukan Plastik</a>
+                    <a href="#custom" class="hover:text-cyan-400 transition-colors">Studio Grafir Nama</a>
+                    <a href="#kontak" class="hover:text-cyan-400 transition-colors">Kontak CS</a>
+                </nav>
+
+                <!-- Tombol Beli Cepat -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20tertarik%20dengan%20koleksi%20tumbler%20stainless" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-5 py-2.5 rounded-full shadow-lg shadow-cyan-500/25 transition-all flex items-center gap-2 text-sm">
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                        Pesan Cepat WA
+                    </a>
+                </div>
+
+                <!-- Tombol Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block text-slate-300 hover:text-cyan-400 py-2 text-base font-medium">Beranda</a>
+            <a href="#katalog" class="block text-slate-300 hover:text-cyan-400 py-2 text-base font-medium">Pilihan Warna & Model</a>
+            <a href="#keunggulan" class="block text-slate-300 hover:text-cyan-400 py-2 text-base font-medium">Keunggulan Stainless</a>
+            <a href="#custom" class="block text-slate-300 hover:text-cyan-400 py-2 text-base font-medium">Studio Grafir Nama</a>
+            <a href="#kontak" class="block text-slate-300 hover:text-cyan-400 py-2 text-base font-medium">Kontak CS</a>
+            <div class="pt-2 grid grid-cols-2 gap-2">
+                <a href="https://wa.me/6289531660114" target="_blank" class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-center font-bold py-2.5 rounded-xl text-xs flex justify-center items-center gap-1">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> CS 1 (0895)
+                </a>
+                <a href="https://wa.me/62881012560095" target="_blank" class="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-center font-bold py-2.5 rounded-xl text-xs flex justify-center items-center gap-1">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> CS 2 (0881)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-gradient text-white relative overflow-hidden py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+                        Koleksi Warna Aesthetic & Elegan
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Tumbler Stainless Premium. <span class="bg-gradient-to-r from-teal-300 via-cyan-300 to-sky-400 bg-clip-text text-transparent">Gaya Mewah, Tahan Panas & Dingin!</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Bosan dengan tumbler plastik yang mudah pecah dan berbau? <strong class="text-white">Aquora</strong> hadir dengan material <strong class="text-teal-300">Stainless Steel (Stenly) SUS 304 & 316</strong> bermutu tinggi dengan pilihan varian warna eksklusif yang memukau.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#katalog" class="bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500 hover:brightness-110 text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-cyan-500/20 transition-all flex items-center justify-center gap-2 text-base">
+                            Eksplor Pilihan Warna
+                            <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#custom" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-700 transition-all flex items-center justify-center gap-2 text-base">
+                            <i data-lucide="wand-2" class="w-5 h-5 text-cyan-400"></i>
+                            Coba Ukir Nama (Grafir)
+                        </a>
+                    </div>
+
+                    <!-- Highlight Spesifikasi -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl font-black text-cyan-400">24 Jam</div>
+                            <div class="text-xs text-slate-400">Dingin Sempurna</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-teal-400">12 Jam</div>
+                            <div class="text-xs text-slate-400">Panas Terjaga</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-sky-400">0% Plastik</div>
+                            <div class="text-xs text-slate-400">Body Stenly Utuh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Tumbler Interaktif -->
+                <div class="relative flex flex-col items-center">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <div class="relative w-full max-w-md bg-slate-900/90 rounded-3xl p-6 border border-slate-800 shadow-2xl">
+                        <div class="relative h-96 rounded-2xl overflow-hidden mb-6 bg-slate-950 flex items-center justify-center group">
+                            <img id="hero-tumbler-img" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80" alt="Aquora Tumbler Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-cyan-300 border border-slate-700">
+                                <span id="hero-tumbler-badge">Best Seller: Stealth Black</span>
+                            </div>
+                        </div>
+
+                        <!-- Selector Warna Cepat di Hero -->
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs font-semibold text-slate-400">
+                                <span>Pilih Varian Warna Favorit:</span>
+                                <span id="hero-color-name" class="text-cyan-300">Stealth Matte Black</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2 p-2 bg-slate-950/80 rounded-2xl border border-slate-800">
+                                <button onclick="switchHeroTumbler('black', 'Stealth Matte Black', 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80')" class="w-9 h-9 rounded-full bg-slate-900 border-2 border-slate-600 focus:border-cyan-400 transition" title="Stealth Black"></button>
+                                <button onclick="switchHeroTumbler('silver', 'Pure Metal Silver', 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80')" class="w-9 h-9 rounded-full bg-gradient-to-tr from-slate-300 to-slate-100 border-2 border-slate-400 focus:border-cyan-400 transition" title="Pure Silver"></button>
+                                <button onclick="switchHeroTumbler('sage', 'Forest Sage Green', 'https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=800&q=80')" class="w-9 h-9 rounded-full bg-emerald-800 border-2 border-emerald-600 focus:border-cyan-400 transition" title="Forest Sage"></button>
+                                <button onclick="switchHeroTumbler('navy', 'Pacific Deep Navy', 'https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80')" class="w-9 h-9 rounded-full bg-blue-900 border-2 border-blue-700 focus:border-cyan-400 transition" title="Pacific Navy"></button>
+                                <button onclick="switchHeroTumbler('rosegold', 'Rose Gold Satin', 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80')" class="w-9 h-9 rounded-full bg-rose-400 border-2 border-rose-300 focus:border-cyan-400 transition" title="Rose Gold"></button>
+                                <button onclick="switchHeroTumbler('white', 'Pearl White Matte', 'https://images.unsplash.com/photo-1570831739435-660143a4e5d0?auto=format&fit=crop&w=800&q=80')" class="w-9 h-9 rounded-full bg-slate-100 border-2 border-slate-300 focus:border-cyan-400 transition" title="Pearl White"></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Garansi Material Stenly -->
+    <section id="keunggulan" class="bg-gradient-to-r from-slate-900 via-teal-950 to-slate-900 border-y border-teal-500/20 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-6 items-center text-center md:text-left">
+                <div class="flex items-center gap-4 justify-center md:justify-start">
+                    <div class="p-3 bg-teal-500/10 rounded-2xl border border-teal-500/30 text-teal-300">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-base">Bukan Bahan Plastik Murahan</h4>
+                        <p class="text-xs text-slate-300">100% Body Stainless Steel Stenly SUS 304/316</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 justify-center md:justify-start">
+                    <div class="p-3 bg-cyan-500/10 rounded-2xl border border-cyan-500/30 text-cyan-300">
+                        <i data-lucide="flame" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-base">Double-Wall Vacuum Insulation</h4>
+                        <p class="text-xs text-slate-300">Minuman panas/dingin tidak merembes ke luar</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 justify-center md:justify-start">
+                    <div class="p-3 bg-blue-500/10 rounded-2xl border border-blue-500/30 text-blue-300">
+                        <i data-lucide="award" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-base">BPA Free & Food Grade</h4>
+                        <p class="text-xs text-slate-300">Aman untuk kesehatan tanpa rasa logam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalag Produk Berdasarkan Model & Warna -->
+    <section id="katalog" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-semibold uppercase">
+                    Koleksi Model Terbaru
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                    Pilih Model & Warna Tumbler Aquora Favorit Anda
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Tersedia berbagai pilihan tipe tumbler stainless steel dengan desain minimalis, modern, hingga edisi kustom sport yang fungsional.
+                </p>
+            </div>
+
+            <!-- Grid Katalog Produk -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Model 1: Aquora Stealth Black Edition -->
+                <div class="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="relative h-80 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80" alt="Aquora Stealth Black Tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-slate-900/90 border border-slate-700 text-amber-400 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i> Best Seller #1
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-teal-400 bg-teal-950 border border-teal-800/80 px-2.5 py-1 rounded-md">Vakum Stenly 304</span>
+                                <span class="text-xs text-slate-400">Kapasitas: 500 ml</span>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-white">Aquora Stealth Black</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Varian warna hitam matte premium dengan tekstur anti gores. Terkesan sangat maskulin, elegan, dan profesional saat dibawa ke kantor.
+                            </p>
+                            
+                            <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 line-through">Rp 240.000</span>
+                                    <div class="text-2xl font-black text-white">Rp 185.000</div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded-full">Hemat 23%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Stealth%20Black%20(Rp%20185.000)" target="_blank" class="w-full bg-gradient-to-r from-teal-400 to-cyan-500 hover:brightness-110 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                            Pesan via CS 1 (0895)
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Stealth%20Black%20(Rp%20185.000)" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-2.5 rounded-xl border border-slate-800 text-xs flex items-center justify-center gap-2 transition">
+                            Pesan via CS 2 (0881)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 2: Aquora Forest Sage Green -->
+                <div class="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="relative h-80 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=800&q=80" alt="Aquora Forest Sage Green Tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-emerald-950/90 border border-emerald-700 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full">
+                                Varian Warna Terbaru
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-emerald-400 bg-emerald-950 border border-emerald-800/80 px-2.5 py-1 rounded-md">Outdoor Series 304</span>
+                                <span class="text-xs text-slate-400">Kapasitas: 600 ml</span>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-white">Aquora Forest Sage</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Paduan warna hijau sage bernuansa alam dengan *powder coating* tahan gesekan. Sangat pas untuk aktivitas outdoor, olah raga, dan traveling.
+                            </p>
+                            
+                            <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 line-through">Rp 250.000</span>
+                                    <div class="text-2xl font-black text-white">Rp 195.000</div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded-full">Hemat 22%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Forest%20Sage%20(Rp%20195.000)" target="_blank" class="w-full bg-gradient-to-r from-teal-400 to-cyan-500 hover:brightness-110 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                            Pesan via CS 1 (0895)
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Forest%20Sage%20(Rp%20195.000)" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-2.5 rounded-xl border border-slate-800 text-xs flex items-center justify-center gap-2 transition">
+                            Pesan via CS 2 (0881)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 3: Aquora Rose Gold Satin -->
+                <div class="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="relative h-80 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80" alt="Aquora Rose Gold Satin Tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-rose-950/90 border border-rose-800 text-rose-300 text-xs font-bold px-3 py-1 rounded-full">
+                                Favorit Wanita
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-rose-400 bg-rose-950 border border-rose-800/80 px-2.5 py-1 rounded-md">Luxury Stenly 316</span>
+                                <span class="text-xs text-slate-400">Kapasitas: 500 ml</span>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-white">Aquora Rose Gold</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Sentuhan warna tembaga kemerahan lembut bergaya elegan. Sangat mewah untuk teman minum kopi dan teh hangat di meja kerja Anda.
+                            </p>
+                            
+                            <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 line-through">Rp 260.000</span>
+                                    <div class="text-2xl font-black text-white">Rp 205.000</div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded-full">Hemat 21%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Rose%20Gold%20(Rp%20205.000)" target="_blank" class="w-full bg-gradient-to-r from-teal-400 to-cyan-500 hover:brightness-110 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                            Pesan via CS 1 (0895)
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Rose%20Gold%20(Rp%20205.000)" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-2.5 rounded-xl border border-slate-800 text-xs flex items-center justify-center gap-2 transition">
+                            Pesan via CS 2 (0881)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 4: Aquora Pacific Deep Navy -->
+                <div class="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="relative h-80 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80" alt="Aquora Pacific Navy Tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-blue-950/90 border border-blue-800 text-blue-300 text-xs font-bold px-3 py-1 rounded-full">
+                                Sport Straw Lid
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-blue-400 bg-blue-950 border border-blue-800/80 px-2.5 py-1 rounded-md">Vakum Stenly 304</span>
+                                <span class="text-xs text-slate-400">Kapasitas: 750 ml</span>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-white">Aquora Pacific Navy</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Varian warna biru samudra dengan kapasitas ekstra besar 750ml. Dilengkapi dengan tutup sedotan stainless fleksibel anti tumpah.
+                            </p>
+                            
+                            <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 line-through">Rp 275.000</span>
+                                    <div class="text-2xl font-black text-white">Rp 215.000</div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded-full">Hemat 21%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Pacific%20Navy%20(Rp%20215.000)" target="_blank" class="w-full bg-gradient-to-r from-teal-400 to-cyan-500 hover:brightness-110 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                            Pesan via CS 1 (0895)
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Pacific%20Navy%20(Rp%20215.000)" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-2.5 rounded-xl border border-slate-800 text-xs flex items-center justify-center gap-2 transition">
+                            Pesan via CS 2 (0881)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 5: Aquora Pure Metal Silver -->
+                <div class="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="relative h-80 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Aquora Pure Silver Tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-slate-800 text-slate-200 text-xs font-bold px-3 py-1 rounded-full">
+                                Pure Metal Authentic
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-sky-400 bg-sky-950 border border-sky-800/80 px-2.5 py-1 rounded-md">SUS 316 Premium</span>
+                                <span class="text-xs text-slate-400">Kapasitas: 750 ml</span>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-white">Aquora Pure Silver</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Tampilan stainless steel murni mengkilap tanpa lapisan cat tambahan. Paling awet, tidak bisa terkelupas, dan sangat autentik.
+                            </p>
+                            
+                            <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 line-through">Rp 270.000</span>
+                                    <div class="text-2xl font-black text-white">Rp 215.000</div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded-full">Hemat 20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Pure%20Silver%20(Rp%20215.000)" target="_blank" class="w-full bg-gradient-to-r from-teal-400 to-cyan-500 hover:brightness-110 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                            Pesan via CS 1 (0895)
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Pure%20Silver%20(Rp%20215.000)" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-2.5 rounded-xl border border-slate-800 text-xs flex items-center justify-center gap-2 transition">
+                            Pesan via CS 2 (0881)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 6: Aquora Pearl White Minimalist -->
+                <div class="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="relative h-80 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1570831739435-660143a4e5d0?auto=format&fit=crop&w=800&q=80" alt="Aquora Pearl White Tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-slate-100 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
+                                Clean Minimalist
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-teal-400 bg-teal-950 border border-teal-800/80 px-2.5 py-1 rounded-md">Vakum Stenly 304</span>
+                                <span class="text-xs text-slate-400">Kapasitas: 600 ml</span>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-white">Aquora Pearl White</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Warna putih mutiara bersih dengan aksen stainless steel silver pada bagian tutup. Tampilan minimalis ala estetika Korean style.
+                            </p>
+                            
+                            <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 line-through">Rp 250.000</span>
+                                    <div class="text-2xl font-black text-white">Rp 195.000</div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded-full">Hemat 22%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Pearl%20White%20(Rp%20195.000)" target="_blank" class="w-full bg-gradient-to-r from-teal-400 to-cyan-500 hover:brightness-110 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                            Pesan via CS 1 (0895)
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora,%20saya%20mau%20order%20Aquora%20Pearl%20White%20(Rp%20195.000)" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-2.5 rounded-xl border border-slate-800 text-xs flex items-center justify-center gap-2 transition">
+                            Pesan via CS 2 (0881)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Simulasi Grafir Nama Interaktif -->
+    <section id="custom" class="py-20 bg-slate-950 relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Keterangan Layanan -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 text-xs font-semibold uppercase">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-teal-400"></i>
+                        Layanan Ukir Laser Permanen
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">
+                        Grafir Nama / Logo Kustom Pada Permukaan Stainless Steel
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Keunggulan tumbler berbahan <strong class="text-teal-300">Stainless Steel murni</strong> adalah kemampuannya diukir presisi menggunakan mesin *Laser Engraving*. Ukiran akan mengelupas lapisan warna secara permanen sehingga nama Anda muncul elegan warna logam perak tanpa stiker atau sablon cat.
+                    </p>
+
+                    <div class="space-y-3 text-slate-300 text-sm">
+                        <div class="flex items-center gap-3 bg-slate-900 p-3.5 rounded-2xl border border-slate-800">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-teal-400 shrink-0"></i>
+                            <span><strong>Hasil Ukiran Permanen:</strong> Tidak akan luntur atau terkelupas saat dicuci berulang kali.</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-900 p-3.5 rounded-2xl border border-slate-800">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-teal-400 shrink-0"></i>
+                            <span><strong>Cocok Untuk Hadiah & Event:</strong> Souvenir pernikahan, kado ulang tahun, & tumbler nama kantor.</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-900 p-3.5 rounded-2xl border border-slate-800">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-teal-400 shrink-0"></i>
+                            <span><strong>Bisa Satuan:</strong> Tanpa minimal order! Beli 1 pcs tetap kami layani kustom nama.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Engraving Simulator Box -->
+                <div class="bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-2xl space-y-6">
+                    <div class="flex justify-between items-center border-b border-slate-800 pb-4">
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="wand-2" class="w-5 h-5 text-cyan-400"></i>
+                            Studio Live Preview Grafir
+                        </h3>
+                        <span class="text-xs text-teal-400 font-medium">Bisa Langsung Diorder</span>
+                    </div>
+
+                    <!-- Input Nama -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">1. Masukkan Teks / Nama Ukiran:</label>
+                        <input type="text" id="engrave-input-text" placeholder="Contoh: Rian Pratama" value="AQUORA" class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-white font-medium focus:outline-none focus:border-cyan-400 transition">
+                    </div>
+
+                    <!-- Pilih Warna Tumbler Simulasi -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">2. Pilih Warna Tumbler:</label>
+                        <div class="grid grid-cols-4 gap-2">
+                            <button onclick="setEngraveColor('black', 'Stealth Black', '#1e293b')" class="p-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-300 font-medium flex items-center justify-center gap-1">
+                                <span class="w-3 h-3 rounded-full bg-slate-900 border border-slate-600"></span> Hitam
+                            </button>
+                            <button onclick="setEngraveColor('sage', 'Forest Sage', '#064e3b')" class="p-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-300 font-medium flex items-center justify-center gap-1">
+                                <span class="w-3 h-3 rounded-full bg-emerald-800"></span> Sage
+                            </button>
+                            <button onclick="setEngraveColor('navy', 'Pacific Navy', '#1e3a8a')" class="p-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-300 font-medium flex items-center justify-center gap-1">
+                                <span class="w-3 h-3 rounded-full bg-blue-900"></span> Navy
+                            </button>
+                            <button onclick="setEngraveColor('rosegold', 'Rose Gold', '#881337')" class="p-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-300 font-medium flex items-center justify-center gap-1">
+                                <span class="w-3 h-3 rounded-full bg-rose-400"></span> Rose
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pilih Font Style -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">3. Pilih Gaya Huruf (Font):</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="setEngraveFont('font-engrave-1')" class="py-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-200 font-engrave-1">Modern Caps</button>
+                            <button onclick="setEngraveFont('font-engrave-2')" class="py-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-200 font-engrave-2">Cursive Classic</button>
+                            <button onclick="setEngraveFont('font-engrave-3')" class="py-2 bg-slate-950 rounded-xl border border-slate-700 hover:border-cyan-400 text-xs text-slate-200 font-engrave-3">Futuristic</button>
+                        </div>
+                    </div>
+
+                    <!-- Canvas/Preview Tumbler 2D -->
+                    <div class="relative bg-slate-950 rounded-2xl h-64 border border-slate-800 flex items-center justify-center overflow-hidden">
+                        <div id="tumbler-mockup-body" class="w-28 h-52 rounded-xl shadow-2xl flex items-center justify-center relative border border-slate-500/40 transition-colors duration-500" style="background-color: #0f172a;">
+                            <!-- Tutup Stainless -->
+                            <div class="absolute -top-3 w-16 h-5 bg-gradient-to-r from-slate-400 via-slate-200 to-slate-500 rounded-t-md shadow"></div>
+                            
+                            <!-- Teks Grafir Laser Efek Metalik -->
+                            <div id="engrave-preview-text" class="text-slate-300 font-bold text-base tracking-widest uppercase rotate-90 whitespace-nowrap drop-shadow font-engrave-1 opacity-90 transition-all">
+                                AQUORA
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Pesan Kustom -->
+                    <button onclick="orderCustomEngrave()" class="w-full bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500 text-slate-950 font-black py-4 rounded-xl shadow-lg hover:brightness-110 transition flex justify-center items-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5"></i>
+                        Pesan Varian Ini ke WhatsApp CS
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold text-teal-400 uppercase tracking-widest">Testimoni Pembeli</span>
+                <h2 class="text-3xl font-black text-white mt-1">Ulasan Kepuasan Produk Aquora</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Pesen yang Stealth Black plus ukir nama. Warnanya gagah banget, permukaan matte halus tapi gak gampang baret. Es batu utuh dari jam 8 pagi sampe sore!"
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-300 font-bold flex items-center justify-center">B</div>
+                        <div>
+                            <div class="font-bold text-sm text-white">Budi Santoso</div>
+                            <div class="text-xs text-slate-500">Beli Varian Stealth Black</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Warna Forest Sage-nya cantik banget aslinya! Bahannya stensil tebal berbobot, terbukti gak ada bau plastik pas diisi air panas."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 font-bold flex items-center justify-center">D</div>
+                        <div>
+                            <div class="font-bold text-sm text-white">Dian Permata</div>
+                            <div class="text-xs text-slate-500">Beli Varian Forest Sage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Langsung pesan 30 pcs buat souvenir gathering kantor lewat CS WhatsApp 0895, respon cepat dan barang dikirim tepat waktu dengan kemasan dus rapi."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-300 font-bold flex items-center justify-center">R</div>
+                        <div>
+                            <div class="font-bold text-sm text-white">Reza Fahlevi</div>
+                            <div class="text-xs text-slate-500">Beli Kustom Kantor (Pacific Navy)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Kontak CS -->
+    <footer id="kontak" class="bg-slate-950 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Info Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-400 flex items-center justify-center text-slate-950 font-black">A</div>
+                        <span class="text-xl font-bold text-white tracking-wider">AQUORA</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Penyedia tumbler stainless steel (stensil) food-grade berkualitas premium. Bebas bahan plastik murahan, tahan panas dan dingin seharian.
+                    </p>
+                </div>
+
+                <!-- Kontak CS WhatsApp -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Kontak Pemesanan (CS)</h4>
+                    <p class="text-xs text-slate-400">Pilih salah satu CS untuk respon cepat:</p>
+                    
+                    <div class="space-y-2 pt-1">
+                        <a href="https://wa.me/6289531660114?text=Halo%20Aquora%20CS%201,%20saya%20mau%20tanya%20produk" target="_blank" class="flex items-center gap-3 text-sm text-cyan-300 hover:text-cyan-200 font-semibold bg-slate-900 p-3 rounded-xl border border-slate-800 transition">
+                            <i data-lucide="message-square" class="w-4 h-4 text-cyan-400"></i>
+                            CS 1: 0895-3166-0114
+                        </a>
+                        <a href="https://wa.me/62881012560095?text=Halo%20Aquora%20CS%202,%20saya%20mau%20tanya%20produk" target="_blank" class="flex items-center gap-3 text-sm text-blue-300 hover:text-blue-200 font-semibold bg-slate-900 p-3 rounded-xl border border-slate-800 transition">
+                            <i data-lucide="message-square" class="w-4 h-4 text-blue-400"></i>
+                            CS 2: 0881-0125-60095
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigasi -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Navigasi Website</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#beranda" class="hover:text-white transition">Beranda Utama</a></li>
+                        <li><a href="#katalog" class="hover:text-white transition">Varian Warna & Model</a></li>
+                        <li><a href="#keunggulan" class="hover:text-white transition">Garansi Stainless Steel</a></li>
+                        <li><a href="#custom" class="hover:text-white transition">Studio Grafir Kustom</a></li>
+                    </ul>
+                </div>
+
+                <!-- Jam Layanan -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Jam Operasional</h4>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <div>Senin - Sabtu: 08.00 - 20.00 WIB</div>
+                        <div>Minggu / Libur: Tetap Melayani Order WA</div>
+                        <div class="text-teal-400 pt-2 font-medium">Pengiriman ke Seluruh Indonesia</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Aquora Stainless Steel Tumbler. All rights reserved.</p>
+                <p>100% Genuine Stainless Steel (Bukan Plastik)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Widget Tombol WA Floating -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/6289531660114?text=Halo%20CS%20Aquora,%20saya%20tertarik%20dengan%20produk%20tumbler%20stainless" target="_blank" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:scale-110 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300" title="Chat WhatsApp CS 1 (0895-3166-0114)">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+        </a>
+    </div>
+
+    <!-- Script Interaktif -->
+    <script>
+        // Inisialisasi Ikon Lucide
+        lucide.createIcons();
+
+        // Menu Mobile Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Switcher Gambar & Varian Warna di Hero
+        function switchHeroTumbler(colorKey, name, imgUrl) {
+            document.getElementById('hero-tumbler-img').src = imgUrl;
+            document.getElementById('hero-color-name').textContent = name;
+            document.getElementById('hero-tumbler-badge').textContent = 'Varian Vokal: ' + name;
+        }
+
+        // Variable State untuk Simulator Grafir Nama
+        let selectedEngraveColorName = 'Stealth Black';
+        let currentFontClass = 'font-engrave-1';
+
+        const engraveInput = document.getElementById('engrave-input-text');
+        const engravePreview = document.getElementById('engrave-preview-text');
+        const tumblerBody = document.getElementById('tumbler-mockup-body');
+
+        // Event listener saat mengetik nama
+        engraveInput.addEventListener('input', (e) => {
+            const val = e.target.value.trim();
+            if (val !== '') {
+                engravePreview.textContent = val;
+            } else {
+                engravePreview.textContent = 'AQUORA';
+            }
+        });
+
+        // Pengubah Warna Tumbler Simulasi
+        function setEngraveColor(colorKey, colorName, hexBg) {
+            selectedEngraveColorName = colorName;
+            tumblerBody.style.backgroundColor = hexBg;
+        }
+
+        // Pengubah Font Style
+        function setEngraveFont(fontClass) {
+            engravePreview.classList.remove('font-engrave-1', 'font-engrave-2', 'font-engrave-3');
+            engravePreview.classList.add(fontClass);
+            currentFontClass = fontClass;
+        }
+
+        // Mengirim Format Pesanan Kustom ke WhatsApp CS
+        function orderCustomEngrave() {
+            const textToEngrave = engraveInput.value.trim() || 'AQUORA';
+            const message = `Halo CS Aquora, saya ingin order Tumbler Kustom Grafir Nama:%0A- Nama/Teks: *${encodeURIComponent(textToEngrave)}*%0A- Varian Warna: *${encodeURIComponent(selectedEngraveColorName)}*%0A- Bahan: Stainless Steel 100%`;
+            window.open(`https://wa.me/6289531660114?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
